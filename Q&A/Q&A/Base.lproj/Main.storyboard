@@ -113,30 +113,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UA7-TB-Yea">
-                                <rect key="frame" x="0.0" y="140" width="414" height="448"/>
+                                <rect key="frame" x="8" y="148" width="398" height="448"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQn-5i-OFx">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAz-Tz-ar8">
-                                        <rect key="frame" x="0.0" y="28.5" width="414" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="0.0" y="38" width="398" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="baM-r7-gTo">
-                                        <rect key="frame" x="0.0" y="57" width="414" height="30"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Answerer's Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="baM-r7-gTo">
+                                        <rect key="frame" x="0.0" y="70" width="398" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="249" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fTZ-Nh-DWX">
-                                        <rect key="frame" x="0.0" y="95" width="414" height="353"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <rect key="frame" x="0.0" y="108" width="398" height="340"/>
+                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -145,10 +144,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="I57-Da-1IL" firstAttribute="trailing" secondItem="UA7-TB-Yea" secondAttribute="trailing" id="fUM-5a-UpR"/>
+                            <constraint firstItem="I57-Da-1IL" firstAttribute="trailing" secondItem="UA7-TB-Yea" secondAttribute="trailing" constant="8" id="fUM-5a-UpR"/>
                             <constraint firstItem="UA7-TB-Yea" firstAttribute="height" secondItem="r7x-Uj-iAU" secondAttribute="height" multiplier="0.5" id="jr8-kT-evy"/>
-                            <constraint firstItem="UA7-TB-Yea" firstAttribute="top" secondItem="I57-Da-1IL" secondAttribute="top" id="kWW-9l-6n4"/>
-                            <constraint firstItem="UA7-TB-Yea" firstAttribute="leading" secondItem="I57-Da-1IL" secondAttribute="leading" id="mC7-j7-yJC"/>
+                            <constraint firstItem="UA7-TB-Yea" firstAttribute="top" secondItem="I57-Da-1IL" secondAttribute="top" constant="8" id="kWW-9l-6n4"/>
+                            <constraint firstItem="UA7-TB-Yea" firstAttribute="leading" secondItem="I57-Da-1IL" secondAttribute="leading" constant="8" id="mC7-j7-yJC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="I57-Da-1IL"/>
                     </view>
@@ -170,7 +169,7 @@
             </objects>
             <point key="canvasLocation" x="1729" y="431"/>
         </scene>
-        <!--Title-->
+        <!--Ask A Question-->
         <scene sceneID="GY0-Qa-u1P">
             <objects>
                 <viewController id="rKt-YH-T6a" customClass="AskQuestionViewController" customModule="Q_A" customModuleProvider="target" sceneMemberID="viewController">
@@ -179,32 +178,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BKD-es-qzs">
-                                <rect key="frame" x="0.0" y="156" width="414" height="30"/>
+                                <rect key="frame" x="8" y="156" width="398" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EBT-2L-bvt">
-                                <rect key="frame" x="0.0" y="194" width="414" height="295.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <rect key="frame" x="8" y="194" width="398" height="295.5"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="NLy-1p-7Ht" firstAttribute="trailing" secondItem="EBT-2L-bvt" secondAttribute="trailing" id="1VP-fE-uLQ"/>
+                            <constraint firstItem="NLy-1p-7Ht" firstAttribute="trailing" secondItem="EBT-2L-bvt" secondAttribute="trailing" constant="8" id="1VP-fE-uLQ"/>
                             <constraint firstItem="EBT-2L-bvt" firstAttribute="height" secondItem="IYQ-cw-iVQ" secondAttribute="height" multiplier="0.33" id="2PK-0E-3X3"/>
                             <constraint firstItem="BKD-es-qzs" firstAttribute="top" secondItem="NLy-1p-7Ht" secondAttribute="top" constant="16" id="Moy-Q3-gHq"/>
-                            <constraint firstItem="EBT-2L-bvt" firstAttribute="leading" secondItem="NLy-1p-7Ht" secondAttribute="leading" id="N2n-q6-qIM"/>
+                            <constraint firstItem="EBT-2L-bvt" firstAttribute="leading" secondItem="NLy-1p-7Ht" secondAttribute="leading" constant="8" id="N2n-q6-qIM"/>
                             <constraint firstItem="EBT-2L-bvt" firstAttribute="top" secondItem="BKD-es-qzs" secondAttribute="bottom" constant="8" id="YbM-0Z-qbC"/>
-                            <constraint firstItem="BKD-es-qzs" firstAttribute="leading" secondItem="NLy-1p-7Ht" secondAttribute="leading" id="hd2-5l-phF"/>
-                            <constraint firstItem="NLy-1p-7Ht" firstAttribute="trailing" secondItem="BKD-es-qzs" secondAttribute="trailing" id="mWg-tL-VXB"/>
+                            <constraint firstItem="BKD-es-qzs" firstAttribute="leading" secondItem="NLy-1p-7Ht" secondAttribute="leading" constant="8" id="hd2-5l-phF"/>
+                            <constraint firstItem="NLy-1p-7Ht" firstAttribute="trailing" secondItem="BKD-es-qzs" secondAttribute="trailing" constant="8" id="mWg-tL-VXB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NLy-1p-7Ht"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="dnP-hl-6Zu">
+                    <navigationItem key="navigationItem" title="Ask A Question" id="dnP-hl-6Zu">
                         <barButtonItem key="rightBarButtonItem" title="Submit Question" id="CVG-Ic-UmD">
                             <connections>
                                 <action selector="submitQuestionButtonTapped:" destination="rKt-YH-T6a" id="yld-Mj-Ove"/>

@@ -19,6 +19,7 @@ class AnswerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = question?.question
         updateViews()
     }
     
@@ -28,6 +29,7 @@ class AnswerViewController: UIViewController {
         
         if answererText != "" || answerTextView.text != "" {
             questionController?.update(question: question, answer: answerTextView.text, answerer: answererText)
+            navigationController?.popViewController(animated: true)
         } else {
             return
         }
@@ -35,7 +37,7 @@ class AnswerViewController: UIViewController {
     
     func updateViews() {
         questionLabel.text = question?.question
-        askedByLabel.text = question?.asker
+        askedByLabel.text = "Asked By: \(question?.asker ?? "")"
         answererTextField.text = question?.answerer
         answerTextView.text = question?.answer
     }

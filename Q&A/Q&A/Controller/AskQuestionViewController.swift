@@ -25,6 +25,7 @@ class AskQuestionViewController: UIViewController {
         
         if askerNameText != "" || askerQuestion.text != "" {
             questionController?.create(question: askerQuestion.text, asker: askerNameText)
+            navigationController?.popViewController(animated: true)
         } else {
             return
         }
