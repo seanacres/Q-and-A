@@ -8,18 +8,19 @@
 
 import Foundation
 
-var questions: [Question] = []
-
-func create(question: Question) {
-    questions.append(question)
-}
-
-func update(question: Question, answer: String, answerer: String) {
+class QuestionController {
+    var questions: [Question] = []
     
-    question.answer = answer
-    question.answerer = answerer
-}
-
-func delete(question: Question, indexPath: IndexPath) {
+    func create(question: String, asker: String) {
+        let question = Question(question: question, asker: asker)
+        questions.append(question)
+    }
     
+    func update(question: Question, answer: String, answerer: String) {
+
+    }
+    
+    func delete(questionAt indexPath: IndexPath) {
+        questions.remove(at: indexPath.row)
+    }
 }

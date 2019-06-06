@@ -12,6 +12,7 @@ class AskQuestionViewController: UIViewController {
 
     @IBOutlet var askerName: UITextField!
     @IBOutlet var askerQuestion: UITextView!
+    var questionController: QuestionController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,12 @@ class AskQuestionViewController: UIViewController {
     }
     
     @IBAction func submitQuestionButtonTapped(_ sender: Any) {
+        guard let askerNameText = askerName.text else { return }
+        if askerNameText != "" || askerQuestion.text != "" {
+            questionController?.create(question: askerQuestion.text, asker: askerNameText)
+        } else {
+            return
+        }
     }
     
     /*
