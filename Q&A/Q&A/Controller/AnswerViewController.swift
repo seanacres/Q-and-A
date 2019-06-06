@@ -14,14 +14,32 @@ class AnswerViewController: UIViewController {
     @IBOutlet var askedByLabel: UILabel!
     @IBOutlet var answererTextField: UITextField!
     @IBOutlet var answerTextView: UITextView!
+    var questionController: QuestionController?
+    var question: Question?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        updateViews()
     }
     
-
+    @IBAction func submitAnswerButtonTapped(_ sender: Any) {
+        guard let answererText = answererTextField.text,
+            let question = question else { return }
+        
+        if answererText != "" || answerTextView.text != "" {
+            questionController?.update(question: question, answer: answerTextView.text, answerer: answererText)
+        } else {
+            return
+        }
+    }
+    
+    func updateViews() {
+        questionLabel.text = question?.question
+        askedByLabel.text = question?.asker
+        answererTextField.text = question?.answerer
+        answerTextView.text = question?.answer
+    }
+    
     /*
     // MARK: - Navigation
 

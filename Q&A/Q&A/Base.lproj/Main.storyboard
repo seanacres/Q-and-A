@@ -95,7 +95,7 @@
                     <navigationItem key="navigationItem" title="Q&amp;A" id="R4A-j0-SQR">
                         <barButtonItem key="rightBarButtonItem" title="Ask Question" id="S4Q-uK-hbO">
                             <connections>
-                                <segue destination="rKt-YH-T6a" kind="show" id="YLE-wm-FoW"/>
+                                <segue destination="rKt-YH-T6a" kind="show" identifier="askQuestion" id="YLE-wm-FoW"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -104,7 +104,7 @@
             </objects>
             <point key="canvasLocation" x="961" y="118"/>
         </scene>
-        <!--Answer View Controller-->
+        <!--Title-->
         <scene sceneID="LZL-zK-o8O">
             <objects>
                 <viewController id="zo3-ls-GiK" customClass="AnswerViewController" customModule="Q_A" customModuleProvider="target" sceneMemberID="viewController">
@@ -152,6 +152,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="I57-Da-1IL"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="wx3-H4-K1w">
+                        <barButtonItem key="rightBarButtonItem" title="Submit Answer" id="vGS-jl-Zty">
+                            <connections>
+                                <action selector="submitAnswerButtonTapped:" destination="zo3-ls-GiK" id="2jb-fX-Du4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="answerTextView" destination="fTZ-Nh-DWX" id="f0z-Zu-lYT"/>
                         <outlet property="answererTextField" destination="baM-r7-gTo" id="uoj-IJ-Gab"/>

@@ -22,6 +22,7 @@ class AskQuestionViewController: UIViewController {
     
     @IBAction func submitQuestionButtonTapped(_ sender: Any) {
         guard let askerNameText = askerName.text else { return }
+        
         if askerNameText != "" || askerQuestion.text != "" {
             questionController?.create(question: askerQuestion.text, asker: askerNameText)
         } else {
