@@ -212,7 +212,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="answererName" destination="BKD-es-qzs" id="Pa6-Yh-fPB"/>
                         <outlet property="askerName" destination="BKD-es-qzs" id="aFJ-eQ-kE4"/>
                         <outlet property="askerQuestion" destination="EBT-2L-bvt" id="RAx-Ja-WiO"/>
                     </connections>
